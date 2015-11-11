@@ -37,6 +37,7 @@
             this.CharLevelValue = new System.Windows.Forms.Label();
             this.MoneyValue = new System.Windows.Forms.Label();
             this.CharStats = new System.Windows.Forms.Button();
+            this.Location = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Health
@@ -122,11 +123,21 @@
             this.CharStats.UseVisualStyleBackColor = true;
             this.CharStats.Click += new System.EventHandler(this.CharStats_Click);
             // 
+            // Location
+            // 
+            this.Location.AutoSize = true;
+            this.Location.Location = new System.Drawing.Point(708, 9);
+            this.Location.Name = "Location";
+            this.Location.Size = new System.Drawing.Size(62, 17);
+            this.Location.TabIndex = 9;
+            this.Location.Text = "Location";
+            // 
             // SimpleRPG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 555);
+            this.Controls.Add(this.Location);
             this.Controls.Add(this.CharStats);
             this.Controls.Add(this.MoneyValue);
             this.Controls.Add(this.CharLevelValue);
@@ -155,6 +166,7 @@
         private System.Windows.Forms.Label CharLevelValue;
         private System.Windows.Forms.Label MoneyValue;
         private System.Windows.Forms.Button CharStats;
+        private System.Windows.Forms.Label Location;
     }
 }
 
